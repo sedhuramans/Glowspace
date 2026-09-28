@@ -1,0 +1,142 @@
+:root {
+  /* Soft Blush & Pale Blush Skincare Palette */
+  --color-blush-50: #fdf9f8;
+  --color-blush-100: #fbf2f0;
+  --color-blush-200: #f5e3e0;
+  --color-blush-300: #ebd0cd;
+  --color-blush-400: #deb4b1;
+  --color-blush-500: #cf9592;
+  --color-blush-600: #b87774;
+  --color-blush-700: #985957;
+  --color-blush-800: #774341;
+  --color-blush-900: #4a2727;
+
+  /* Neutral Backgrounds & Surfaces */
+  --color-bg: #faf7f5;
+  --color-surface: #ffffff;
+  --color-surface-soft: #fcf8f6;
+  --color-surface-hover: #f7ecea;
+
+  /* Typography Colors */
+  --color-text-main: #2b2527;        /* Dark Charcoal */
+  --color-text-secondary: #6e6466;   /* Muted Gray */
+  --color-text-muted: #9c9295;
+  --color-text-light: #b5acaf;
+  --color-text-inverse: #ffffff;
+
+  /* Accent & Status */
+  --color-accent: #c4837f;
+  --color-accent-hover: #b06e6a;
+  --color-accent-soft: #f7e9e8;
+  
+  --color-success: #43805f;
+  --color-success-bg: #eef7f2;
+  --color-warning: #b37830;
+  --color-warning-bg: #fef6eb;
+  --color-danger: #b54747;
+  --color-danger-bg: #fdf0f0;
+  --color-info: #467399;
+  --color-info-bg: #eff6fc;
+
+  /* Borders & Dividers */
+  --color-border: #ede4e2;
+  --color-border-subtle: #f4eeec;
+  --color-border-focus: #cf9592;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  /* Border Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Soft Shadows */
+  --shadow-xs: 0 2px 6px rgba(43, 37, 39, 0.04);
+  --shadow-sm: 0 4px 14px rgba(207, 149, 146, 0.08);
+  --shadow-md: 0 8px 24px rgba(207, 149, 146, 0.12);
+  --shadow-lg: 0 16px 40px rgba(207, 149, 146, 0.15);
+  --shadow-xl: 0 24px 60px rgba(43, 37, 39, 0.10);
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --header-height: 76px;
+  --container-max-width: 1240px;
+  --sidebar-width: 270px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-blush-300);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blush-400);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
